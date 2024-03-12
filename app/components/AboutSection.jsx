@@ -51,7 +51,7 @@ const AboutSection = () => {
         <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
         <p className="text-base lg:text-lg">Fullstack developer with a background in electronic engineering and passion for coding. Experiece in Wordpress and automation,
               alongside a skill set like solving problems, oriented detail, creativity,  and a diverse array of technological competencies.
-             I"m a quick learner and always looking to expand my knowledge and skill set. I"m a team player and exited to work with others to create amazing things.
+             I am a quick learner and always looking to expand my knowledge and skill set. I am a team player and exited to work with others to create amazing things.
         </p>
       </div>
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
