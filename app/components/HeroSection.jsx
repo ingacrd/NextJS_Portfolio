@@ -1,10 +1,10 @@
 "use client"
-import React from 'react'
-import Image from 'next/image'
+import React from "react"
+import Image from "next/image"
 
-import { TypeAnimation } from 'react-type-animation';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 
 
@@ -12,9 +12,9 @@ import Link from 'next/link';
 const HeroSection = () => {
   const downloadCV = () => {
 
-    const aTag = document.createElement('a')
-    aTag.href = '/CVFull.pdf'
-    aTag.setAttribute('download', 'AndreaRuizCV.pdf')
+    const aTag = document.createElement("a")
+    aTag.href = "/CVFull.pdf"
+    aTag.setAttribute("download", "AndreaRuizCV.pdf")
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
@@ -37,13 +37,13 @@ const HeroSection = () => {
                        <TypeAnimation
                         sequence={[
                           // Same substring at the start will only be typed out once, initially
-                          'Andrea Ruiz',
+                          "Andrea Ruiz",
                           1000, // wait 1s before replacing "Mice" with "Hamsters"
-                          'Fullstack Developer',
+                          "Fullstack Developer",
                           1000,
-                          'Web Developer',
+                          "Web Developer",
                           1000,
-                          'Mobile Developer',
+                          "Mobile Developer",
                           1000,
                         ]}
                         wrapper="span"
@@ -78,8 +78,8 @@ const HeroSection = () => {
               <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
                 <Image
                 src="/images/hero-image.png"
-                alt='hero image'
-                className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+                alt="hero image"
+                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 width={300}
                 height={300}
                 />
