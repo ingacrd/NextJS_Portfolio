@@ -11,7 +11,7 @@ const Footer = () => {
                 height={35}
                 className=""
             />
-            <p className="text-slate-600">All rights reserved</p>
+            <p className="text-slate-600">Copyright © 2024 Andrea Carolina Ruiz Diaz</p>
         </div>
     </footer>
   )

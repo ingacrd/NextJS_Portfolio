@@ -39,7 +39,7 @@ const EmailSection = () => {
     }
   };
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+    <section id='contact' className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2"></div>
                         {/* "bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2" */}
         <div className="">
@@ -57,11 +57,12 @@ const EmailSection = () => {
                             width={50}
                             height={50}/>
                 </Link>
-                <Link href="https://www.linkedin.com/in/ingacrd/">
+                <Link className="text text-gray-600 fill-pink-600" href="https://www.linkedin.com/in/ingacrd/">
                     <Image src="/linkedin-icon.svg"
                             alt = "linkedin Icon"
                             width={50}
-                            height={50}/>
+                            height={50}
+                            />
                 </Link>
             </div>
         </div>

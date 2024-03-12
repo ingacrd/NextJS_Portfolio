@@ -8,12 +8,13 @@ import { motion, useInView } from 'framer-motion';
 const projectsData = [
     {
         id:1,
-        title: "NextJS AI Prompting tool",
-        description: "Project 1 description",
+        title: "Fullstack NextJS AI Prompting tool",
+        description: "Fullstack NextJS application to discover and share prompts for AI",
         image: "images/projects/ReactNoteApp.gif",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
         previewUrl: "https://next-js-ai-prompting-tool.vercel.app/",
+        technologies: ["NextJS", "TypeScript", "MongoDB"],
     },
     {
         id:2,
@@ -23,6 +24,7 @@ const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
         previewUrl: "https://notesapplication-react.netlify.app/",
+        technologies: ["React", "TypeScript"],
     },
     {
         id:3,
@@ -32,6 +34,7 @@ const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/ReactMovieSearcher",
         previewUrl: "https://reactmoviesearcher.netlify.app/",
+        technologies: ["React"],
     },
     {
         id:4,
@@ -41,6 +44,7 @@ const projectsData = [
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/ingacrd/IOS-TaskApp",
         previewUrl: "/",
+        technologies: ["Swift"],
     },
     {
         id:5,
@@ -50,6 +54,7 @@ const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/Python-API-French-Verbs/",
         previewUrl: "/",
+        technologies: ["Python", "Flask", "MongoDB"],
     },
     {
         id:6,
@@ -59,16 +64,29 @@ const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/game_quizz",
         previewUrl: "https://quizzgame-88db6df00806.herokuapp.com/",
+        technologies: ["PHP", "MySQL", "AJAX"],
     },
     {
         id:6,
-        title: "Javasript Bootstrap Portfolio ",
+        title: "JavaScript Bootstrap Portfolio ",
         description: "Portfolio Web responsive made using JavaScript, Bootstrap, SASS ans CSS Animations",
         image: "images/projects/JsBootstrapSassPortfolio.jpeg",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/PortfolioJavascriptBootstrap",
         previewUrl: "https://aru-portfolio.netlify.app/",
+        technologies: ["JavaScript", "Bootstrap", "SASS"],
     },
+    {
+        id:6,
+        title: "Multipurpose Responsive Layout",
+        description: "Multipurpose Web Layout made using Bootstrap and SASS, with trusted by, our services, testimonials, FAQ, portofio and contact sections ",
+        image: "images/projects/MultipurposeLayoutBootstrap.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/ingacrd/PortfolioJavascriptBootstrap",
+        previewUrl: "https://aru-portfolio.netlify.app/",
+        technologies: ["Bootstrap", "SASS"],
+    },
+
     {
         id:6,
         title: "Javasript BlackJack game",
@@ -77,6 +95,8 @@ const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/Blackjack-game",
         previewUrl: "https://exquisite-dango-c516ae.netlify.app/",
+        technologies: ["JavaScript"],
+
     },
     {
         id:7,
@@ -86,6 +106,7 @@ const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/tracking-leads-chrome-extention",
         previewUrl: "/",
+        technologies: ["JavaScript"],
     },
     {
         id:8,
@@ -95,6 +116,7 @@ const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "https://harmonious-starburst-036a9a.netlify.app/",
+        technologies: ["HTML", "CSS Animations"],
     },
 
 ];
@@ -119,7 +141,7 @@ const ProjectsSection = () => {
     };
 
   return (
-    <section>
+    <section id="projects">
         <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
             My Projects
         </h2>
@@ -157,6 +179,7 @@ const ProjectsSection = () => {
                         tags={project.tag}
                         gitUrl={project.gitUrl}
                         previewUrl={project.previewUrl}
+                        technologies = {project.technologies}
                      />
                 </motion.li>
                 
