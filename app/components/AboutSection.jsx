@@ -1,8 +1,8 @@
 "use client"
-import React, {useState, useTransition} from 'react'
-import Image from 'next/image';
-import TabButton from './TabButton';
-import SkillsSection from './SkillsSection';
+import React, {useState, useTransition} from "react"
+import Image from "next/image";
+import TabButton from "./TabButton";
+import SkillsSection from "./SkillsSection";
 
 const TAB_DATA = [
   {
@@ -19,7 +19,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>AEC in Information Technology Programmer- Analyst</li>
-        <li>Bachelor's Degree - Control Engineer</li>
+        <li>Bachelor Degree - Control Engineer</li>
       </ul>
     ),
   },
@@ -46,12 +46,12 @@ const AboutSection = () => {
   }
 
   return (
-    <section id='about' className='text-white container mt-9'>
+    <section id="about" className="text-white container mt-9">
       <div className="gap-8 px-4 xl:gap-16 xl:px-16">
         <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
         <p className="text-base lg:text-lg">Fullstack developer with a background in electronic engineering and passion for coding. Experiece in Wordpress and automation,
               alongside a skill set like solving problems, oriented detail, creativity,  and a diverse array of technological competencies.
-             I'm a quick learner and always looking to expand my knowledge and skill set. I'm a team player and exited to work with others to create amazing things.
+             I"m a quick learner and always looking to expand my knowledge and skill set. I"m a team player and exited to work with others to create amazing things.
         </p>
       </div>
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
