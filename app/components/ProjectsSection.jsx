@@ -9,12 +9,12 @@ const projectsData = [
     {
         id:1,
         title: "Fullstack NextJS AI Prompting tool",
-        description: "Fullstack NextJS application to discover and share prompts for AI",
-        image: "images/projects/ReactNoteApp.gif",
+        description: "Fullstack NextJS application to discover and share prompts for AI. Share, copy text, create, delete, view other users profiles",
+        image: "images/projects/promptopia.gif",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
         previewUrl: "https://next-js-ai-prompting-tool.vercel.app/",
-        technologies: ["NextJS", "TypeScript", "MongoDB"],
+        technologies: ["NextJS", "Tailwind", "MongoDB"],
     },
     {
         id:2,
