@@ -49,9 +49,11 @@ const AboutSection = () => {
     <section id="about" className="text-white container mt-9">
       <div className="gap-8 px-4 xl:gap-16 xl:px-16">
         <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
-        <p className="text-base lg:text-lg">Fullstack developer with a background in electronic engineering and passion for coding. Experiece in Wordpress and automation,
-              alongside a skill set like solving problems, oriented detail, creativity,  and a diverse array of technological competencies.
-             I am a quick learner and always looking to expand my knowledge and skill set. I am a team player and exited to work with others to create amazing things.
+        <p className="text-base text-start lg:text-lg">
+          I am a Fullstack Developer with a solid foundation in electronic engineering and passion for coding. With hands-on experience in WordPress and automation, my expertise extends to problem-solving, attention to detail, creativity, and a diverse range of technological competencies.
+        </p>
+        <p className="text-base text-start lg:text-lg">
+          As a continuous learner, I am constantly seeking opportunities to broaden my knowledge and refine my skill set. I thrive in collaborative environments and am enthusiastic about working alongside others to bring innovative ideas to life. Let's collaborate and create something truly extraordinary together.
         </p>
       </div>
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">

@@ -7,13 +7,13 @@ import Link from 'next/link'
 const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, technologies}) => {
   return (
     <div>
-        <div 
+        <div id="card"
             className="h-52 md:h-72 rounded-t-xl relative group" 
             style={{background: `url(${imgUrl})`, backgroundSize: "cover"}}
         >
-        <div className="flex flex-row justify-between absolute bottom-4 left-4 items-center">
+        <div id="tech" className="flex flex-wrap justify-start absolute bottom-3 left-3 items-center max-w-full">
             {technologies.map((technology, index)=>(
-                <div key={index} className="text-white ml-1 border-primary-500 bg-[#181818] rounded-full border-4 text-sm items-center justify-center  py-1 px-4">
+                <div key={index} className="text-white ml-1 border-primary-500 bg-[#181818] rounded-full border-2 text-sm items-center justify-center  py-1 px-3 mb-1">
                     {technology}
                 </div> 
             ))} 
