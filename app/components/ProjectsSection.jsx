@@ -14,7 +14,7 @@ const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
         previewUrl: "https://next-js-ai-prompting-tool.vercel.app/",
-        technologies: ["NextJS", "TypeScript", "MongoDB", "Probando1", "Probando2"],
+        technologies: ["NextJS", "TypeScript", "MongoDB"],
     },
     {
         id:2,
