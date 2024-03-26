@@ -8,10 +8,10 @@ const Footer = () => {
             <Image
                 src="/images/logo.png"
                 width={100}
-                height={35}
+                height={23}
                 className=""
             />
-            <p className="text-slate-600">Copyright © 2024 Andrea Carolina Ruiz Diaz</p>
+            <p className="text-slate-600 text-xs">Copyright © 2024 Andrea Carolina Ruiz Diaz</p>
         </div>
     </footer>
   )
