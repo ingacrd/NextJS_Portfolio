@@ -49,7 +49,7 @@ const AboutSection = () => {
     <section id="about" className="text-white container mt-9">
       <div className="gap-8 px-4 xl:gap-16 xl:px-16">
         <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
-        <p className="text-base text-start lg:text-lg">
+        <p className="text-base text-start lg:text-lg mb-4">
           I am a Fullstack Developer with a solid foundation in electronic engineering and passion for coding. With hands-on experience in WordPress and automation, my expertise extends to problem-solving, attention to detail, creativity, and a diverse range of technological competencies.
         </p>
         <p className="text-base text-start lg:text-lg">
