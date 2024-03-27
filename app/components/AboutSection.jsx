@@ -46,7 +46,7 @@ const AboutSection = () => {
   }
 
   return (
-    <section id="about" className="text-white container mt-9 mb-1">
+    <section id="about" className="text-white container mb-1">
       <div className="gap-8 px-4 xl:gap-16 xl:px-16">
         <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
         <p className="text-base text-start lg:text-lg mb-4">
