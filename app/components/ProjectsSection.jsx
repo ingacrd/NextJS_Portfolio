@@ -7,6 +7,16 @@ import { motion, useInView } from 'framer-motion';
 
 const projectsData = [
     {
+        id:9,
+        title: "Property Rental Managment",
+        description: "Allows any potential tenant to search for an apartment and helps the property owner and manager to facilitate the management tasks. Features like appointment scheduling, real-time messaging, event tracking, rental management.",
+        image: "images/projects/ProRentals.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/ingacrd/Property-Rental-Management-ASP.Net-Core-MVC",
+        previewUrl: "/",
+        technologies: ["ASP.Net Core MVC", "Bootstrap", "JavaScript", "SQL Server"],
+    },
+    {
         id:1,
         title: "Fullstack NextJS AI Prompting tool",
         description: "Fullstack NextJS application to discover and share prompts for AI. Share, copy text, create, delete, view other users profiles",
