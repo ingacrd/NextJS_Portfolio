@@ -17,6 +17,16 @@ const projectsData = [
         technologies: ["ASP.Net Core MVC", "Bootstrap", "JavaScript", "SQL Server"],
     },
     {
+        id:11,
+        title: "Android App My Couple Game",
+        description: "My couple game is an Android application designed to foster stronger bonds between partners. By facilitating the exchange of points for recognizing faults and expressing appreciation, it promotes assertive communication and deeper understanding within relationships.",
+        image: "images/projects/myCoupleGame.png",
+        tag: ["All", "Mobile"],
+        gitUrl: "https://github.com/ingacrd/couplePoints-Android-App",
+        previewUrl: "/",
+        technologies: ["Android", "Java", "Firebase"],
+    },
+    {
         id:1,
         title: "Fullstack NextJS AI Prompting tool",
         description: "Fullstack NextJS application to discover and share prompts for AI. Share, copy text, create, delete, view other users profiles",
