@@ -64,7 +64,7 @@ const projectsData = [
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/ingacrd/IOS-Verbs-French",
         previewUrl: "/",
-        technologies: ["Swift"],
+        technologies: ["Swift", "IOS"],
     },
     {
         id:5,
@@ -84,7 +84,7 @@ const projectsData = [
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/ingacrd/IOS-TaskApp",
         previewUrl: "/",
-        technologies: ["Swift"],
+        technologies: ["Swift", "IOS"],
     },
     {
         id:6,
