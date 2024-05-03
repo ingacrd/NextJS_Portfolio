@@ -56,13 +56,17 @@ const AboutSection = () => {
           As a continuous learner, I am constantly seeking opportunities to broaden my knowledge and refine my skill set. I thrive in collaborative environments and am enthusiastic about working alongside others to bring innovative ideas to life. Let&apos;s collaborate and create something truly extraordinary together.
         </p>
       </div>
-        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-            <Image
+        <div className="md:grid md:grid-cols-5 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+            <div className="md:col-span-2">
+              <Image
                 src="/images/about-image.png"
                 width={500}
                 height={500}
-            />
-            <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+              />
+
+            </div>
+            
+            <div className="md:col-span-3 mt-4 md:mt-0 text-left flex flex-col h-full">
                 
                 <div className="flex flex-row justify-start mt-8">
                   <TabButton selectTab={()=>handleTabChange("skills")} active={tab ==="skills"}>{" "}Skills{" "}</TabButton>

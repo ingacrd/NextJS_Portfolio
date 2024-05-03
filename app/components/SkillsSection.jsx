@@ -77,7 +77,7 @@ const skillsData = [
         id:7,
         name: "Android",
         iconComponent: <AndroidIcon className ={`${iconStyles}`}/>,
-        type: "language",
+        type: "others",
     },
     
     {
@@ -113,7 +113,7 @@ const skillsData = [
     },
     {
         id:12,
-        name: "ASP.NET",
+        name: "core",
         iconComponent: <AspNetIcon className ={`${iconStyles}`}/>,
         type: "Framework-Library",
     },
@@ -204,18 +204,82 @@ const skillsData = [
 
 const SkillsSection = () => {
   return (
-    <div className="grid grid-cols-4 lg:grid-cols-6 ">
-        {
-           skillsData.map((skill, index) => (
-                <SkillIcon 
-                    key={index}
-                    iconComponent = {skill.iconComponent}
-                    name = {skill.name}
-                />
+    <>
+        <div className='grid lg:grid-cols-2 gap-10'>
+            <div>
+                <h6>Languages</h6>
+                {/* <div className="grid grid-cols-4 lg:grid-cols-8 "> */}
+                <div className="grid grid-cols-4">   
+                    {
+                    skillsData.map((skill, index) => (
+                            skill.type === "language" ? (
+                            <SkillIcon 
+                                key={index}
+                                iconComponent={skill.iconComponent}
+                                name={skill.name}
+                            />
+                        ) : null
+                    ))
+                    }
+                </div>
+            </div>
+            <div>
+                <h6>Frameworks/Libraries</h6>
+                <div className="grid grid-cols-4 ">
+                    
+                    {
+                    skillsData.map((skill, index) => (
+                            skill.type === "Framework-Library" ? (
+                            <SkillIcon 
+                                key={index}
+                                iconComponent={skill.iconComponent}
+                                name={skill.name}
+                            />
+                        ) : null
+                    ))
+                    }
+                </div>
+            </div>
+            <div>
+                <h6>Databases</h6>
+                <div className="grid grid-cols-4">
+                    
+                    {
+                    skillsData.map((skill, index) => (
+                            skill.type === "databases" ? (
+                            <SkillIcon 
+                                key={index}
+                                iconComponent={skill.iconComponent}
+                                name={skill.name}
+                            />
+                        ) : null
+                    ))
+                    }
+                </div>                
+            </div>
+            <div>
+                <h6>Others</h6>
+                <div className="grid grid-cols-4    ">
+                    
+                    {
+                    skillsData.map((skill, index) => (
+                            skill.type === "others" ? (
+                            <SkillIcon 
+                                key={index}
+                                iconComponent={skill.iconComponent}
+                                name={skill.name}
+                            />
+                        ) : null
+                    ))
+                    }
+                </div>
+            </div>
 
-           ))
-        }
-    </div>
+        </div>
+        
+        
+    </>
+    
     
   )
 }
