@@ -13,7 +13,7 @@ const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, technologi
         >
         <div id="tech" className="flex flex-wrap justify-start absolute bottom-3 left-3 items-center max-w-full">
             {technologies.map((technology, index)=>(
-                <div key={index} className="text-white ml-1 border-primary-500 bg-[#181818] rounded-full border-2 text-sm items-center justify-center  py-1 px-3 mb-1">
+                <div key={index} className="text-white ml-1 border-primary-500 bg-[#181818] rounded-full border-2 text-xs items-center justify-center  py-1 px-3 mb-1">
                     {technology}
                 </div> 
             ))} 
