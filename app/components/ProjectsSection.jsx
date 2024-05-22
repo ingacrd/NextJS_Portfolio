@@ -13,7 +13,7 @@ const projectsData = [
         image: "images/projects/ProRentals.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/Property-Rental-Management-ASP.Net-Core-MVC",
-        previewUrl: "/",
+        previewUrl: "https://www.youtube.com/watch?v=Rdf-fGiqSDw",
         technologies: ["ASP.Net Core MVC", "Bootstrap", "JavaScript", "SQL Server"],
     },
     {
