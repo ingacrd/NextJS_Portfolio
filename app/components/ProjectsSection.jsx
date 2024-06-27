@@ -1,13 +1,13 @@
 "use client";
 
-import React,{useState, useRef} from 'react'
+import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
 import { motion, useInView } from 'framer-motion';
 
 const projectsData = [
     {
-        id:9,
+        id: 9,
         title: "Property Rental Managment",
         description: "Allows any potential tenant to search for an apartment and helps the property owner and manager to facilitate the management tasks. Features like appointment scheduling, real-time messaging, event tracking, rental management.",
         image: "images/projects/ProRentals.png",
@@ -17,7 +17,7 @@ const projectsData = [
         technologies: ["ASP.Net Core MVC", "Bootstrap", "JavaScript", "SQL Server"],
     },
     {
-        id:11,
+        id: 11,
         title: "Android App My Couple Game",
         description: "My couple game is an Android application designed to foster stronger bonds between partners. By facilitating the exchange of points for recognizing faults and expressing appreciation, it promotes assertive communication and deeper understanding within relationships.",
         image: "images/projects/myCoupleGame.png",
@@ -27,7 +27,7 @@ const projectsData = [
         technologies: ["Android", "Java", "Firebase"],
     },
     {
-        id:1,
+        id: 1,
         title: "Fullstack NextJS AI Prompting tool",
         description: "Fullstack NextJS application to discover and share prompts for AI. Share, copy text, create, delete, view other users profiles",
         image: "images/projects/promptopia.gif",
@@ -37,7 +37,7 @@ const projectsData = [
         technologies: ["NextJS", "Tailwind", "MongoDB"],
     },
     {
-        id:2,
+        id: 2,
         title: "React Notes App",
         description: "Create, edit, filter, and delete notes, tagging system, markdown support.",
         image: "images/projects/ReactNoteApp.gif",
@@ -47,17 +47,17 @@ const projectsData = [
         technologies: ["React", "TypeScript"],
     },
     {
-        id:3,
+        id: 3,
         title: "React Movie Searcher",
-        description: "Search for movies using the OMDB API, showing dynamic movie cards with details. Made following a tutorial and adding custom filtering component",
+        description: "Search for movies using the OMDB API, showing dynamic movie cards with details. Made following a tutorial and adding custom ordering component",
         image: "images/projects/ReactMovieSearcher.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/ReactMovieSearcher",
         previewUrl: "https://reactmoviesearcher.netlify.app/",
         technologies: ["React"],
     },
-     {
-        id:10,
+    {
+        id: 10,
         title: "IOS App Poly French Verbs Game",
         description: "IOS app, that comsumes the Python Verb French API, and play a quizz game to learn french verbs, with sing in and registration features ",
         image: "images/projects/poly.png",
@@ -67,7 +67,7 @@ const projectsData = [
         technologies: ["Swift", "IOS"],
     },
     {
-        id:5,
+        id: 5,
         title: "Python Verb French API",
         description: "API for managing verbs and users, using Flask and MongoDB",
         image: "images/projects/PythonFrenchVerbs.png",
@@ -76,8 +76,8 @@ const projectsData = [
         previewUrl: "/",
         technologies: ["Python", "Flask", "MongoDB"],
     },
-     {
-        id:4,
+    {
+        id: 4,
         title: "IOS Task Manager",
         description: "iPhone app to view, add, update, delete, search and complete tasks",
         image: "images/projects/IOSTaskManager.png",
@@ -87,7 +87,7 @@ const projectsData = [
         technologies: ["Swift", "IOS"],
     },
     {
-        id:6,
+        id: 6,
         title: "PHP Quiz Game",
         description: "PHP. AJAX. Sign-Up. Sign-In. Logout. Time-Out. Change Password. Multi-Level Gam. Game Abandonment. History Result. MySQL.",
         image: "images/projects/QuizGame.png",
@@ -97,7 +97,7 @@ const projectsData = [
         technologies: ["PHP", "MySQL", "AJAX"],
     },
     {
-        id:6,
+        id: 6,
         title: "JavaScript Bootstrap Portfolio ",
         description: "Portfolio Web responsive made using JavaScript, Bootstrap, SASS ans CSS Animations",
         image: "images/projects/JsBootstrapSassPortfolio.jpeg",
@@ -107,7 +107,7 @@ const projectsData = [
         technologies: ["JavaScript", "Bootstrap", "SASS"],
     },
     {
-        id:6,
+        id: 6,
         title: "Multipurpose Responsive Layout",
         description: "Multipurpose Web Layout made using Bootstrap and SASS, with trusted by, our services, testimonials, FAQ, portofio and contact sections ",
         image: "images/projects/MultipurposeLayoutBootstrap.png",
@@ -118,7 +118,7 @@ const projectsData = [
     },
 
     {
-        id:6,
+        id: 6,
         title: "Javasript BlackJack game",
         description: "BlackJack simmple game using JavaScript",
         image: "images/projects/BlackJack.png",
@@ -129,7 +129,7 @@ const projectsData = [
 
     },
     {
-        id:7,
+        id: 7,
         title: "Tracking Leads Chrome Extension",
         description: "JavaScript Chrome Extension to save leads's profile link using local storage memory",
         image: "images/projects/chromeExtension.png",
@@ -139,7 +139,7 @@ const projectsData = [
         technologies: ["JavaScript"],
     },
     {
-        id:8,
+        id: 8,
         title: "Ecommerce Mirror Fashion",
         description: "Ecommerce Front-end using HTML and CSS Animation",
         image: "images/projects/Mirror_fashion.png",
@@ -155,68 +155,68 @@ const ProjectsSection = () => {
 
     const [tag, setTag] = useState("All");
     const ref = useRef(null);
-    const isInView = useInView(ref, {once:true});
+    const isInView = useInView(ref, { once: true });
 
     const handleTagChange = (newTag) => {
         setTag(newTag);
     };
 
-    const filteredProjects = projectsData.filter((project) => 
+    const filteredProjects = projectsData.filter((project) =>
         project.tag.includes(tag)
     );
 
     const cardVariants = {
-        initial: {y:50, opacity:0},
-        animate: {y:0, opacity:1},
+        initial: { y: 50, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
     };
 
-  return (
-    <section id="projects">
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-            My Projects
-        </h2>
-        <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-            <ProjectTag 
-                onClick = {handleTagChange} 
-                name="All" 
-                isSelected ={tag === "All"}
-            />
-            <ProjectTag 
-                onClick = {handleTagChange} 
-                name="Web" 
-                isSelected ={tag === "Web"}
-            />
-            <ProjectTag 
-                onClick = {handleTagChange} 
-                name="Mobile" 
-                isSelected ={tag === "Mobile"}
-            />
-        </div>
-        <ul ref={ref}className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {filteredProjects.map((project, index) => (
-                <motion.li 
-                    key={index}
-                    variants={cardVariants} 
-                    initial="initial" 
-                    animate = {isInView? "animate" : "initial"}
-                    transition={{duration: 0.3, delay: index*0.4}}
+    return (
+        <section id="projects">
+            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+                My Projects
+            </h2>
+            <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="All"
+                    isSelected={tag === "All"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="Web"
+                    isSelected={tag === "Web"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="Mobile"
+                    isSelected={tag === "Mobile"}
+                />
+            </div>
+            <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+                {filteredProjects.map((project, index) => (
+                    <motion.li
+                        key={index}
+                        variants={cardVariants}
+                        initial="initial"
+                        animate={isInView ? "animate" : "initial"}
+                        transition={{ duration: 0.3, delay: index * 0.4 }}
                     >
-                        <ProjectCard 
-                        key={project.id} 
-                        title={project.title} 
-                        description={project.description} 
-                        imgUrl={project.image}
-                        tags={project.tag}
-                        gitUrl={project.gitUrl}
-                        previewUrl={project.previewUrl}
-                        technologies = {project.technologies}
-                     />
-                </motion.li>
-                
-            ))}
-        </ul>
-    </section>
-  )
+                        <ProjectCard
+                            key={project.id}
+                            title={project.title}
+                            description={project.description}
+                            imgUrl={project.image}
+                            tags={project.tag}
+                            gitUrl={project.gitUrl}
+                            previewUrl={project.previewUrl}
+                            technologies={project.technologies}
+                        />
+                    </motion.li>
+
+                ))}
+            </ul>
+        </section>
+    )
 }
 
 export default ProjectsSection
