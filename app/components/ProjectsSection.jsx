@@ -49,7 +49,7 @@ const projectsData = [
     {
         id:3,
         title: "React Movie Searcher",
-        description: "Search for movies using the OMDB API, showing dynamic movie cards with details.",
+        description: "Search for movies using the OMDB API, showing dynamic movie cards with details. Made following a tutorial and adding custom filtering component",
         image: "images/projects/ReactMovieSearcher.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/ReactMovieSearcher",
