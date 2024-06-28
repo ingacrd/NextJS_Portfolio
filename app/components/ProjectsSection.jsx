@@ -39,7 +39,7 @@ const projectsData = [
     {
         id: 2,
         title: "React Notes App",
-        description: "Advance Note taking app, that has filtering, categoriees, markdown support, full routing, deleting, editing, updating. Made following a tutorial and adding filter by content",
+        description: "An advanced note-taking app with filtering, categories, markdown support, full routing, and features for deleting, editing, and updating notes. Created following a tutorial, with added content and date filtering.",
         image: "images/projects/ReactNoteApp.gif",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
