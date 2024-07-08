@@ -30,7 +30,7 @@ const projectsData = [
         id: 1,
         title: "Fullstack NextJS AI Prompting tool",
         description: "Created a full-stack NextJS application to discover and share AI prompts, incorporating functionalities like text sharing, copying, creation, deletion, user profile viewing, and Google authentication. Expanded on a tutorial base by implementing a 'likes' feature and the ability to sort prompts by popularity.",
-        image: "images/projects/promptopia.gif",
+        image: "images/projects/Promptly.gif",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
         previewUrl: "https://next-js-ai-prompting-tool.vercel.app/",
