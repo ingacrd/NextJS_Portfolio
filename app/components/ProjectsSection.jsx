@@ -29,7 +29,7 @@ const projectsData = [
     {
         id: 1,
         title: "Fullstack NextJS AI Prompting tool",
-        description: "Fullstack NextJS application to discover and share prompts for AI. Share, copy text, create, delete, view other users' profiles, authenticate using Google accounts. This project was built following a tutorial, additional likes featur added by me",
+        description: "Created a full-stack NextJS application to discover and share AI prompts, incorporating functionalities like text sharing, copying, creation, deletion, user profile viewing, and Google authentication. Expanded on a tutorial base by implementing a 'likes' feature and the ability to sort prompts by popularity.",
         image: "images/projects/promptopia.gif",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
@@ -39,7 +39,7 @@ const projectsData = [
     {
         id: 2,
         title: "React Notes App",
-        description: "An advanced note-taking app with filtering, categories, markdown support, full routing, and features for deleting, editing, and updating notes. Created following a tutorial, with added content and date filtering.",
+        description: "Built an advanced note-taking app with robust features including filtering, categories, markdown support, and full routing. Added functionalities for deleting, editing, and updating notes. Starting from a tutorial, I enhanced it by implementing additional content and date filtering.",
         image: "images/projects/ReactNoteApp.gif",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
@@ -49,7 +49,7 @@ const projectsData = [
     {
         id: 3,
         title: "React Movie Searcher",
-        description: "Search for movies using the OMDB API, showing dynamic movie cards with details. Made following a tutorial and adding custom ordering component",
+        description: " movie search application leveraging the OMDB API to present dynamic movie cards with detailed information. Following a tutorial, I further developed the project by adding a custom component for ordering the movie listings.",
         image: "images/projects/ReactMovieSearcher.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/ReactMovieSearcher",
