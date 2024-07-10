@@ -13,8 +13,8 @@ const projectsData = [
         image: "images/projects/ProRentals.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/Property-Rental-Management-ASP.Net-Core-MVC",
-        previewUrl: "https://www.youtube.com/watch?v=Rdf-fGiqSDw",
-        technologies: ["ASP.Net Core MVC", "Bootstrap", "JavaScript", "SQL Server"],
+        previewUrl: "https://prorentals.azurewebsites.net/",
+        technologies: ["ASP.Net Core MVC", "Bootstrap", "JavaScript", "SQL Server", "Azure"],
     },
     {
         id: 11,
@@ -29,7 +29,7 @@ const projectsData = [
     {
         id: 1,
         title: "Fullstack NextJS AI Prompting tool",
-        description: "Created a full-stack NextJS application to discover and share AI prompts, incorporating functionalities like text sharing, copying, creation, deletion, user profile viewing, and Google authentication. Expanded on a tutorial base by implementing a 'likes' feature and the ability to sort prompts by popularity.",
+        description: "Full-stack NextJS application to discover and share AI prompts, incorporating functionalities like text sharing, copying, creation, deletion, user profile viewing, and Google authentication. Expanded on a tutorial base by implementing a 'likes' feature and the ability to sort prompts by popularity.",
         image: "images/projects/Promptly.gif",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
@@ -39,8 +39,8 @@ const projectsData = [
     {
         id: 2,
         title: "React Notes App",
-        description: "Built an advanced note-taking app with robust features including filtering, categories, markdown support, and full routing. Added functionalities for deleting, editing, and updating notes. Starting from a tutorial, I enhanced it by implementing additional content and date filtering.",
-        image: "images/projects/ReactNoteApp.gif",
+        description: "Advanced note-taking app using React and TypeScript, featuring robust functionalities including filtering, categories, markdown support, full routing, and complete CRUD capabilities. Started from a tutorial, I significantly enhanced it by adding content search, a creation date property, and date filtering.",
+        image: "images/projects/ReactNotesApp.gif",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
         previewUrl: "https://notesapplication-react.netlify.app/",
