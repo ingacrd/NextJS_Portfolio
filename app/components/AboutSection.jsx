@@ -20,6 +20,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>AEC in Information Technology Programmer- Analyst</li>
         <li>Bachelor Degree - Control Engineer</li>
+        <li>Diploma - Electronics Technologist</li>
       </ul>
     ),
   },
@@ -50,7 +51,7 @@ const AboutSection = () => {
       <div className="gap-8 px-4 xl:gap-16 xl:px-16">
         <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
         <p className="text-base text-start lg:text-lg mb-4">
-          I am a Fullstack Developer with a solid foundation in electronic engineering and passion for coding. With hands-on experience in WordPress and automation, my expertise extends to problem-solving, attention to detail, creativity, and a diverse range of technological competencies.
+          I am a Fullstack Developer with a solid foundation in electronic engineering and passion for coding. With hands-on experience in C#, .NET, WordPress and automation, my expertise extends to problem-solving, attention to detail, creativity, and a diverse range of technological competencies.
         </p>
         <p className="text-base text-start lg:text-lg">
           As a continuous learner, I am constantly seeking opportunities to broaden my knowledge and refine my skill set. I thrive in collaborative environments and am enthusiastic about working alongside others to bring innovative ideas to life. Let&apos;s collaborate and create something truly extraordinary together.
