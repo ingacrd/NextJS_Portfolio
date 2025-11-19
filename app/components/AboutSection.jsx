@@ -19,6 +19,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>AEC in Information Technology Programmer- Analyst</li>
+        <li>MBA with emphasis in Project Managment</li>
         <li>Bachelor Degree - Control Engineer</li>
         <li>Diploma - Electronics Technologist</li>
       </ul>
@@ -51,10 +52,19 @@ const AboutSection = () => {
       <div className="gap-8 px-4 xl:gap-16 xl:px-16">
         <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
         <p className="text-base text-start lg:text-lg mb-4">
-          I am a Fullstack Developer with a solid foundation in electronic engineering and passion for coding. With hands-on experience in C#, .NET, WordPress and automation, my expertise extends to problem-solving, attention to detail, creativity, and a diverse range of technological competencies.
+          I am a <b>Full-Stack .NET & React </b>Developer with a background in control engineering and over 1 year of experience in <b>C# and .NET</b>
         </p>
-        <p className="text-base text-start lg:text-lg">
-          As a continuous learner, I am constantly seeking opportunities to broaden my knowledge and refine my skill set. I thrive in collaborative environments and am enthusiastic about working alongside others to bring innovative ideas to life. Let&apos;s collaborate and create something truly extraordinary together.
+        <p className="text-base text-start lg:text-lg mb-4">
+          In my current role, I develop and maintain <b>Windows services</b> that automate and manage file processing between servers, applying <b>SOLID principles</b>, clean code practices, and structured debugging to ensure reliability and stability.
+        </p>
+        <p className="text-base text-start lg:text-lg mb-4">
+          Outside of work, I actively deepen my full-stack skills through personal projects and technical challenges, including building <b>.NET applications with unit tests</b>, applying <b>SOLID</b>, and developing front-end interfaces with <b>Vue, React and TypeScript</b>.
+        </p>
+        <p className="text-base text-start lg:text-lg mb-4">
+          I enjoy working in <b>Agile environments</b>, collaborating through <b>Git, Gitlab, Azure DevOps</b>, and contributing to the improvement of existing systems.
+        </p>
+        <p className="text-base text-start lg:text-lg mb-4">
+          Based in Québec, I&apos;m comfortable working in <b>English and French</b>, and open to hybrid or remote roles across Québec and Canada.
         </p>
       </div>
         <div className="md:grid md:grid-cols-5 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">

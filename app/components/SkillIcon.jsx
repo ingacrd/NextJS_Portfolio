@@ -6,12 +6,14 @@ const SkillIcon = ({iconComponent, name}) => {
     <div className="flex flex-col justify-center items-center">
       {/* w-full sm:w-fit  */}
     <motion.div 
-    whileHover={{
+    // whileHover={{
+      whileHover={{
       scale: [1, 3, 3, 1, 1],
       rotate: [0, 0, 270, 270, 0],
       transition: { duration: 1 },
       // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
     }}
+    
     whileTap={{
         scale: [1, 3, 3, 1, 1],
       rotate: [0, 0, 270, 270, 0],
