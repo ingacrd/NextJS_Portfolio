@@ -34,6 +34,8 @@ const HeroSection = () => {
                     Hello, I&apos;m {""}
                     </span>
                     <br />
+                    </h1>
+                    <h1 className="text-white mb-4 h-28 sm:h-auto text-3xl sm:text-4xl lg:text-6xl lg:leading-normal font-extrabold">
                        <TypeAnimation
                         sequence={[
                           // Same substring at the start will only be typed out once, initially
@@ -48,7 +50,7 @@ const HeroSection = () => {
                         wrapper="span"
                         speed={50}
                         repeat={Infinity}
-                      />
+                      /> 
                   </h1>
                 <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
                 {/* A passionate fullstack developer based in 📍Québec, Canada.  */}

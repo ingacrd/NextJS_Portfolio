@@ -67,7 +67,7 @@ const AboutSection = () => {
           Based in Québec, I&apos;m comfortable working in <b>English and French</b>, and open to hybrid or remote roles across Québec and Canada.
         </p>
       </div>
-        <div className="md:grid md:grid-cols-5 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        <div className="md:grid md:grid-cols-5 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
             <div className="md:col-span-2">
               <Image
                 src="/images/about-image.png"

@@ -1,27 +1,33 @@
 import { motion, useAnimation } from "framer-motion"
 
-const SkillIcon = ({iconComponent, name}) => {
+const SkillIcon = ({iconComponent, name, baseScale = 1}) => {
   const controls = useAnimation();
   return (
 //w-full sm:w-fit rounded-full text-white 
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center w-24">
       {/* w-full sm:w-fit  */}
     <motion.div 
       animate={controls}                              
-      initial={{ scale: 1, rotate: 0 }}
+      initial={{ scale: baseScale, rotate: 0 }}
      onHoverStart={() => {
       controls.start({
-      scale: [1, 3, 3, 1, 1],
+      scale: [baseScale, baseScale *3 ,baseScale* 3, baseScale, baseScale],
       rotate: [0, 0, 270, 270, 0],
       transition: { duration: 1 },
-      // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+      //borderRadius: ["20%", "20%", "50%", "50%", "20%"],
       
       });
-    }}
+      }}
+      whileInView={{
+      scale: [baseScale, baseScale*1.8, baseScale*1.8, baseScale, baseScale],
+      //rotate: [0, 0, 270, 270, 0],
+      transition: { duration: 1 },
+     // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
 
+    }}
      onTap={() => {                                 
         controls.start({
-          scale: [1, 3, 3, 1, 1],
+          scale: [baseScale, baseScale*3, baseScale*3, baseScale, baseScale],
           rotate: [0, 0, 270, 270, 0],
           transition: { duration: 1 },
         });
@@ -34,7 +40,9 @@ const SkillIcon = ({iconComponent, name}) => {
           {iconComponent}
       </span>
     </motion.div>
-    <span className="m-auto text-xs lg:text-sm mt-1">{name}</span>
+    <span className="mt-1 h-8 flex items-start justify-center text-xs text-center leading-tight">{name}</span>
+    {/* <span className="m-auto text-xs lg:text-sm mt-1">{name}</span> */}
+    
     </div>
 
   )
