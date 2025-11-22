@@ -259,7 +259,7 @@ const SkillsSection = () => {
             <div>
                 <h6>Core Stack</h6>
 
-                <div className="grid grid-cols-4 lg:grid-cols-8">   
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-x-4 gap-y-6 px-2">   
                     {
                     skillsData.map((skill, index) => (
                             skill.type === "core" ? (
@@ -278,7 +278,7 @@ const SkillsSection = () => {
             <div className='grid lg:grid-cols-1 gap-10 my-4'>
             <div>
                 <h6>Secondary</h6>
-                <div className="grid grid-cols-4 lg:grid-cols-8 mx-8">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-x-4 gap-y-6 px-2">
                     
                     {
                     skillsData.map((skill, index) => (
@@ -287,7 +287,7 @@ const SkillsSection = () => {
                                 key={index}
                                 iconComponent={skill.iconComponent}
                                 name={skill.name}
-                                baseScale={0.8}
+                                baseScale={0.7}
                             />
                         ) : null
                     ))
