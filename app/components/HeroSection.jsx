@@ -34,6 +34,8 @@ const HeroSection = () => {
                     Hello, I&apos;m {""}
                     </span>
                     <br />
+                    </h1>
+                    <h1 className="text-white mb-4 h-28 sm:h-auto text-3xl sm:text-4xl lg:text-6xl lg:leading-normal font-extrabold">
                        <TypeAnimation
                         sequence={[
                           // Same substring at the start will only be typed out once, initially
@@ -41,23 +43,25 @@ const HeroSection = () => {
                           1000, // wait 1s before replacing "Mice" with "Hamsters"
                           "Fullstack Developer",
                           1000,
-                          "Programmer Analyst",
+                          ".Net & React Developer",
+                          //"Programmer Analyst",
                           1000,
                         ]}
                         wrapper="span"
                         speed={50}
                         repeat={Infinity}
-                      />
+                      /> 
                   </h1>
                 <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                A passionate fullstack developer based in 📍Montreal, Québec, Canada. 
+                {/* A passionate fullstack developer based in 📍Québec, Canada.  */}
+                A Junior Full-Stack .Net & React Developer based in 📍Québec, Canada.
                 </p>
                 <div>
                   <Link
-                    href="#contact"
+                    href="#projects"
                   >
-                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
-                        Hire me
+                      <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
+                        View my projects
                       </button>
                   
                   </Link>

@@ -2,6 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion';
 
 import CsharpIcon from './skillsSvgs/CsharpIcon';
+import EntityFrameworkIcon from './skillsSvgs/EntityFrameworkIcon';
+import WebAPIIcon from './skillsSvgs/WebAPIIcon';
 import JavaScriptIcon from './skillsSvgs/JavaScriptIcon';
 import PhpIcon from './skillsSvgs/PhpIcon';
 import PythonIcon from './skillsSvgs/PythonIcon';
@@ -20,16 +22,17 @@ import SassIcon from './skillsSvgs/SassIcon';
 import CssIcon from './skillsSvgs/CssIcon';
 import HtmlIcon from './skillsSvgs/HtmlIcon';
 import SqlIcon from './skillsSvgs/SqlIcon';
+import PostgresSqlIcon from './skillsSvgs/PostgresSqlIcon';
 import MogoDbIcon from './skillsSvgs/MogoDbIcon';
 import FirebaseIcon from './skillsSvgs/FirebaseIcon';
 import WordpressIcon from './skillsSvgs/WordpressIcon';
 import LinuxIcon from './skillsSvgs/LinuxIcon';
 import GitIcon from './skillsSvgs/GitIcon';
 import AgileIcon from './skillsSvgs/AgileIcon';
-
-
-
-
+import XunitIcon from './skillsSvgs/XunitIcon';
+import AzureDevOpsIcon from './skillsSvgs/AzureDevOpsIcon';
+import SpringIcon from './skillsSvgs/SpringIcon';
+import LaravelIcon from './skillsSvgs/LaravelIcon';
 
 import SkillIcon from './SkillIcon';
 
@@ -40,164 +43,211 @@ const skillsData = [
         id:1,
         name: "C#",
         iconComponent: <CsharpIcon className ={`${iconStyles}`}/>,
-        type: "language",
+        type: "core",
+    },
+    {
+        id:2,
+        name: ".NET",
+        iconComponent: <DotNetIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+    {
+        id:3,
+        name: "core",
+        iconComponent: <AspNetIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+        {
+        id:3,
+        name: "Entity Framework",
+        iconComponent: <EntityFrameworkIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+            {
+        id:3,
+        name: "Web API",
+        iconComponent: <WebAPIIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+     {
+        id:10,
+        name: "React",
+        iconComponent: <ReactIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+    {
+        id:3,
+        name: "TypeScript",
+        iconComponent: <TypeScriptIcon className ={`${iconStyles}`}/>,
+        type: "core",
     },
     {
         id:2,
         name: "JavaScript",
         iconComponent: <JavaScriptIcon className ={`${iconStyles}`}/>,
-        type: "language",
+        type: "core",
     },
-    
+    {
+        id:13,
+        name: "Tailwind",
+        iconComponent: <TailwindIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+        {
+        id:18,
+        name: "SQL server",
+        iconComponent: <SqlIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+    {
+        id:18,
+        name: "PostgreSQL",
+        iconComponent: <PostgresSqlIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+    {
+        id:20,
+        name: "MongoDB",
+        iconComponent: <MogoDbIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+            {
+        id:24,
+        name: "xUnit",
+        iconComponent: <XunitIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+        {
+        id:24,
+        name: "Git",
+        iconComponent: <GitIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+            {
+        id:24,
+        name: "Azure DevOps",
+        iconComponent: <AzureDevOpsIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+        {
+        id:25,
+        name: "Agile",
+        iconComponent: <AgileIcon className ={`${iconStyles}`}/>,
+        type: "core",
+    },
+        {
+        id:5,
+        name: "Java",
+        iconComponent: <JavaIcon className ={`${iconStyles}`}/>,
+        type: "secondary",
+    },
+        {
+        id:5,
+        name: "Spring",
+        iconComponent: <SpringIcon className ={`${iconStyles}`}/>,
+        type: "secondary",
+    },
     {
         id:3,
         name: "PHP",
         iconComponent: <PhpIcon className ={`${iconStyles}`}/>,
-        type: "language",
+        type: "secondary",
+    },
+        {
+        id:3,
+        name: "Laravel",
+        iconComponent: <LaravelIcon className ={`${iconStyles}`}/>,
+        type: "secondary",
     },
     {
         id:4,
         name: "Python",
         iconComponent: <PythonIcon className ={`${iconStyles}`}/>,
-        type: "language",
+        type: "secondary",
     },
-    {
-        id:5,
-        name: "Java",
-        iconComponent: <JavaIcon className ={`${iconStyles}`}/>,
-        type: "language",
-    },
+
     {
         id:6,
         name: "Swift",
         iconComponent: <SwiftIcon className ={`${iconStyles}`}/>,
-        type: "language",
+        type: "secondary",
     },
     {
         id:7,
         name: "Android",
         iconComponent: <AndroidIcon className ={`${iconStyles}`}/>,
-        type: "others",
+        type: "secondary",
     },
     
     {
         id:8,
         name: "Golang",
         iconComponent: <GolangIcon className ={`${iconStyles}`}/>,
-        type: "language",
+        type: "secondary",
     },
-    {
-        id:3,
-        name: "TypeScript",
-        iconComponent: <TypeScriptIcon className ={`${iconStyles}`}/>,
-        type: "language",
-    },
-    
+        
     {
         id:9,
         name: "NextJS",
         iconComponent: <NextJsIcon className ={`${iconStyles}`}/>,
-        type: "Framework-Library",
+        type: "secondary",
     },
-    {
-        id:10,
-        name: "React",
-        iconComponent: <ReactIcon className ={`${iconStyles}`}/>,
-        type: "Framework-Library",
-    },
-    {
-        id:12,
-        name: ".NET",
-        iconComponent: <DotNetIcon className ={`${iconStyles}`}/>,
-        type: "Framework-Library",
-    },
-    {
-        id:12,
-        name: "core",
-        iconComponent: <AspNetIcon className ={`${iconStyles}`}/>,
-        type: "Framework-Library",
-    },
-    
-    {
-        id:13,
-        name: "Tailwind",
-        iconComponent: <TailwindIcon className ={`${iconStyles}`}/>,
-        type: "Framework-Library",
-    },
+
     {
         id:14,
         name: "Bootstrap",
         iconComponent: <BootstrapIcon className ={`${iconStyles}`}/>,
-        type: "Framework-Library",
+        type: "secondary",
     },
     {
         id:15,
         name: "SASS",
         iconComponent: <SassIcon className ={`${iconStyles}`}/>,
-        type: "Framework-Library",
+        type: "others",
     },
     {
         id:16,
         name: "CSS",
         iconComponent: <CssIcon className ={`${iconStyles}`}/>,
-        type: "language",
+        type: "secondary",
     },
     {
         id:17,
         name: "HTML",
         iconComponent: <HtmlIcon className ={`${iconStyles}`}/>,
-        type: "language",
+        type: "secondary",
     },
     
-    {
-        id:18,
-        name: "SQL",
-        iconComponent: <SqlIcon className ={`${iconStyles}`}/>,
-        type: "databases",
-    },
+
     {
         id:19,
         name: "PL/SQL",
         iconComponent: <SqlIcon className ={`${iconStyles}`}/>,
-        type: "databases",
+        type: "secondary",
     },
-    {
-        id:20,
-        name: "MongoDB",
-        iconComponent: <MogoDbIcon className ={`${iconStyles}`}/>,
-        type: "databases",
-    },
+
     {
         id:21,
         name: "firebase",
         iconComponent: <FirebaseIcon className ={`${iconStyles}`}/>,
-        type: "databases",
+        type: "secondary",
     },
     {
         id:22,
         name: "WordPress",
         iconComponent: <WordpressIcon className ={`${iconStyles}`}/>,
-        type: "others",
+        type: "secondary",
     },
     {
         id:23,
         name: "Linux",
         iconComponent: <LinuxIcon className ={`${iconStyles}`}/>,
-        type: "others",
+        type: "secondary",
     },
+
     
-    {
-        id:24,
-        name: "Git",
-        iconComponent: <GitIcon className ={`${iconStyles}`}/>,
-        type: "others",
-    },
-    {
-        id:25,
-        name: "Agile",
-        iconComponent: <AgileIcon className ={`${iconStyles}`}/>,
-        type: "others",
-    },
+
+
     
     
 ]
@@ -205,48 +255,52 @@ const skillsData = [
 const SkillsSection = () => {
   return (
     <>
-        <div className='grid lg:grid-cols-2 gap-10'>
+        <div className='grid lg:grid-cols-1 gap-10'>
             <div>
-                <h6>Languages</h6>
-                {/* <div className="grid grid-cols-4 lg:grid-cols-8 "> */}
-                <div className="grid grid-cols-4">   
+                <h6>Core Stack</h6>
+
+                <div className="grid grid-cols-5 lg:grid-cols-8">   
                     {
                     skillsData.map((skill, index) => (
-                            skill.type === "language" ? (
+                            skill.type === "core" ? (
                             <SkillIcon 
                                 key={index}
                                 iconComponent={skill.iconComponent}
                                 name={skill.name}
+                                baseScale={1}
                             />
                         ) : null
                     ))
                     }
                 </div>
             </div>
+            </div>
+            <div className='grid lg:grid-cols-1 gap-10 my-4'>
             <div>
-                <h6>Frameworks/Libraries</h6>
-                <div className="grid grid-cols-4 ">
+                <h6>Secondary</h6>
+                <div className="grid grid-cols-5 lg:grid-cols-8 mx-8">
                     
                     {
                     skillsData.map((skill, index) => (
-                            skill.type === "Framework-Library" ? (
+                            skill.type === "secondary" ? (
                             <SkillIcon 
                                 key={index}
                                 iconComponent={skill.iconComponent}
                                 name={skill.name}
+                                baseScale={0.8}
                             />
                         ) : null
                     ))
                     }
                 </div>
             </div>
-            <div>
-                <h6>Databases</h6>
+            {/* <div>
+                <h6>Learning / Exploring</h6>
                 <div className="grid grid-cols-4">
                     
                     {
                     skillsData.map((skill, index) => (
-                            skill.type === "databases" ? (
+                            skill.type === "learning" ? (
                             <SkillIcon 
                                 key={index}
                                 iconComponent={skill.iconComponent}
@@ -256,8 +310,8 @@ const SkillsSection = () => {
                     ))
                     }
                 </div>                
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
                 <h6>Others</h6>
                 <div className="grid grid-cols-4    ">
                     
@@ -273,7 +327,7 @@ const SkillsSection = () => {
                     ))
                     }
                 </div>
-            </div>
+            </div> */}
 
         </div>
         
