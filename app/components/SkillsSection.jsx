@@ -2,6 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion';
 
 import CsharpIcon from './skillsSvgs/CsharpIcon';
+import EntityFrameworkIcon from './skillsSvgs/EntityFrameworkIcon';
+import WebAPIIcon from './skillsSvgs/WebAPIIcon';
 import JavaScriptIcon from './skillsSvgs/JavaScriptIcon';
 import PhpIcon from './skillsSvgs/PhpIcon';
 import PythonIcon from './skillsSvgs/PythonIcon';
@@ -20,16 +22,17 @@ import SassIcon from './skillsSvgs/SassIcon';
 import CssIcon from './skillsSvgs/CssIcon';
 import HtmlIcon from './skillsSvgs/HtmlIcon';
 import SqlIcon from './skillsSvgs/SqlIcon';
+import PostgresSqlIcon from './skillsSvgs/PostgresSqlIcon';
 import MogoDbIcon from './skillsSvgs/MogoDbIcon';
 import FirebaseIcon from './skillsSvgs/FirebaseIcon';
 import WordpressIcon from './skillsSvgs/WordpressIcon';
 import LinuxIcon from './skillsSvgs/LinuxIcon';
 import GitIcon from './skillsSvgs/GitIcon';
 import AgileIcon from './skillsSvgs/AgileIcon';
-
-
-
-
+import XunitIcon from './skillsSvgs/XunitIcon';
+import AzureDevOpsIcon from './skillsSvgs/AzureDevOpsIcon';
+import SpringIcon from './skillsSvgs/SpringIcon';
+import LaravelIcon from './skillsSvgs/LaravelIcon';
 
 import SkillIcon from './SkillIcon';
 
@@ -57,13 +60,13 @@ const skillsData = [
         {
         id:3,
         name: "Entity Framework",
-        iconComponent: <AspNetIcon className ={`${iconStyles}`}/>,
+        iconComponent: <EntityFrameworkIcon className ={`${iconStyles}`}/>,
         type: "core",
     },
             {
         id:3,
         name: "Web API",
-        iconComponent: <AspNetIcon className ={`${iconStyles}`}/>,
+        iconComponent: <WebAPIIcon className ={`${iconStyles}`}/>,
         type: "core",
     },
      {
@@ -99,7 +102,7 @@ const skillsData = [
     {
         id:18,
         name: "PostgreSQL",
-        iconComponent: <SqlIcon className ={`${iconStyles}`}/>,
+        iconComponent: <PostgresSqlIcon className ={`${iconStyles}`}/>,
         type: "core",
     },
     {
@@ -111,7 +114,7 @@ const skillsData = [
             {
         id:24,
         name: "xUnit",
-        iconComponent: <GitIcon className ={`${iconStyles}`}/>,
+        iconComponent: <XunitIcon className ={`${iconStyles}`}/>,
         type: "core",
     },
         {
@@ -123,7 +126,7 @@ const skillsData = [
             {
         id:24,
         name: "Azure DevOps",
-        iconComponent: <GitIcon className ={`${iconStyles}`}/>,
+        iconComponent: <AzureDevOpsIcon className ={`${iconStyles}`}/>,
         type: "core",
     },
         {
@@ -141,7 +144,7 @@ const skillsData = [
         {
         id:5,
         name: "Spring",
-        iconComponent: <JavaIcon className ={`${iconStyles}`}/>,
+        iconComponent: <SpringIcon className ={`${iconStyles}`}/>,
         type: "secondary",
     },
     {
@@ -153,7 +156,7 @@ const skillsData = [
         {
         id:3,
         name: "Laravel",
-        iconComponent: <PhpIcon className ={`${iconStyles}`}/>,
+        iconComponent: <LaravelIcon className ={`${iconStyles}`}/>,
         type: "secondary",
     },
     {
