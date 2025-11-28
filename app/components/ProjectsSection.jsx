@@ -9,20 +9,21 @@ import { motion, useInView } from 'framer-motion';
 const featuredProjects = [
   {
     id: "bid-calculator",
-    title: "Bid Calculator — Full-Stack .NET 8 API + Vue Frontend (TDD)",
+    title: "Bid Calculator — Full-Stack .NET 8 API + Vue 3 Frontend (TDD)",
     description:
-      "Production-grade estimation tool to calculate competitive bids using configurable fees, margins, and cost structures. Built to showcase Clean Architecture and TDD.",
+      "A clean full-stack project demonstrating TDD, domain design, and a modern Vue frontend. Calculates bid totals with dynamic fees using a .NET 8 API and reactive UI.",
     stack:
-      ".NET 8 Web API · C# · Entity Framework Core · xUnit · FluentAssertions · Moq · Clean Architecture · Vue 3 / TypeScript · Azure App Service",
+      ".NET 8 · C# · ASP.NET Core Web API · xUnit · Vue 3 · TypeScript · TailwindCSS · Azure · Netlify",
     bullets: [
-      "Designed the domain model and layered architecture (Domain, Application, Infrastructure, API).",
-      "Implemented the bid calculation engine with SOLID + TDD (xUnit, FluentAssertions, Moq).",
-      "Deployed API + Vue frontend to Azure App Service with versioned endpoints and Swagger docs.",
+      "Backend built with SOLID principles and TDD (xUnit + FluentAssertions).",
+      "Fee engine with clean domain architecture.",
+      "Vue 3 + TypeScript frontend with live debounced updates.",
+      " Deployed to Azure (API) & Netlify (Frontend).",
     ],
-    liveDemoUrl: "https://vue-bid-calculator-frontend.vercel.app",
+    liveDemoUrl: "https://bidcalculatorvue.netlify.app/",
     frontendRepoUrl: "https://github.com/ingacrd/Vue-Bid-Calculator-Frontend",
     backendRepoUrl: "https://github.com/ingacrd/Donet-TDD-Bid-Calculator",
-    readMoreUrl: "#", // tu pourras plus tard le pointer vers un case study
+  
   },
   {
     id: "property-rental",
@@ -36,11 +37,11 @@ const featuredProjects = [
       "Built role-based UI flows for tenants and owners using Bootstrap and JavaScript.",
       "Deployed the application to Azure App Service and configured the production database.",
     ],
-    liveDemoUrl: "https://bit.ly/3yEgXKr",
+    liveDemoUrl: "https://www.youtube.com/watch?v=Rdf-fGiqSDw",
     frontendRepoUrl:
       "https://github.com/ingacrd/Property-Rental-Management-ASP.Net-Core-MVC",
-    backendRepoUrl: null, // même repo pour tout, on cache ce bouton
-    readMoreUrl: "#",
+    backendRepoUrl: null, 
+
   },
   {
     id: "ai-prompting-tool",
@@ -53,10 +54,10 @@ const featuredProjects = [
       "Built all pages, forms and layouts in Next.js with responsive Tailwind UI.",
       "Integrated MongoDB + server actions for fast, server-side data access.",
     ],
-    liveDemoUrl: "https://bit.ly/3Vf5ry2",
+    liveDemoUrl: "https://next-js-ai-prompting-tool.vercel.app/",
     frontendRepoUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
     backendRepoUrl: null,
-    readMoreUrl: "#",
+
   },
   {
     id: "portfolio",
@@ -72,7 +73,7 @@ const featuredProjects = [
     liveDemoUrl: "https://andrearuiz.vercel.app",
     frontendRepoUrl: "https://github.com/ingacrd/NextJS_Portfolio",
     backendRepoUrl: null,
-    readMoreUrl: "#",
+
   },
 ];
 
@@ -82,7 +83,7 @@ const otherProjects = [
     title: "React Notes App",
     description:
       "Advanced note-taking app with markdown, categories, filters, routing and full CRUD.",
-    image: "images/projects/ReactNotesApp.gif",
+    image: "/images/projects/ReactNotesApp.gif",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
     previewUrl: "https://notesapplication-react.netlify.app/",
@@ -271,7 +272,7 @@ return (
             {project.description}
             </p>
 
-             <div className="flex flex-wrap gap-2 mb-4">
+             <div className="flex flex-wrap gap-2 mb-3">
                 {project.stack.split("·").map((tech) => (
                     <span
                     key={tech.trim()}
@@ -293,14 +294,14 @@ return (
 
         </div>
 
-            <div className="mt-6 flex flex-wrap gap-3 items-center">
+            <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2 sm:gap-3 items-center">
   {/* Live demo = primary */}
   {project.liveDemoUrl && (
     <a
       href={project.liveDemoUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-sm font-semibold px-4 py-2 rounded-full bg-primary-500 hover:bg-primary-600 transition"
+      className="text-xs sm:text-sm font-semibold px-4 py-2 rounded-full bg-primary-500 text-white shadow-md shadow-primary-500/40 hover:bg-primary-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
     >
       Live demo
     </a>
@@ -312,7 +313,7 @@ return (
       href={project.frontendRepoUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/10 transition"
+      className="text-xs sm:text-sm font-medium px-4 py-2 rounded-full bg-white/5 text-gray-100 border border-white/15 hover:bg-white/10 hover:border-primary-400/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
     >
       Frontend repo
     </a>
@@ -322,21 +323,21 @@ return (
       href={project.backendRepoUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/10 transition"
+      className="text-xs sm:text-sm font-medium px-4 py-2 rounded-full bg-white/5 text-gray-100 border border-white/15 hover:bg-white/10 hover:border-primary-400/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
     >
       Backend repo
     </a>
   )}
 
   {/* Read more = ghost */}
-  {project.readMoreUrl && (
+  {/* {project.readMoreUrl && (
     <a
       href={project.readMoreUrl}
-      className="text-sm px-4 py-2 rounded-full text-gray-300 hover:text-white"
+      className="text-xs sm:text-sm font-medium px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
     >
       Read more
     </a>
-  )}
+  )} */}
 </div>
 
           </motion.div>
