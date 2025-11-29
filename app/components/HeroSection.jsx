@@ -54,8 +54,21 @@ const HeroSection = () => {
                   </h1>
                 <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
                 {/* A passionate fullstack developer based in 📍Québec, Canada.  */}
-                A Junior Full-Stack .Net & React Developer based in 📍Québec, Canada.
+                A Junior Full-Stack .Net & React Developer based in 📍Québec, Canada. 
+                Open to work – Regional Québec (Outside CMM).
+                Open to opportunities in Drummondville, Québec City, Lévis, Trois-Rivières, Sherbrooke, and other regions with on-site or hybrid work.
                 </p>
+
+                <div className="mb-6 space-y-1 text-sm sm:text-base text-[#E5E7EB]">
+                  <p className="uppercase tracking-wide text-[11px] sm:text-xs text-primary-300 font-semibold">
+                    Languages
+                  </p>
+                  <p>
+                    English: <span className="font-medium">Full professional proficiency</span> ·{" "}
+                    French: <span className="font-medium">Professional / functional</span>
+                  </p>
+                </div>
+
                 <div>
                   <Link
                     href="#projects"
