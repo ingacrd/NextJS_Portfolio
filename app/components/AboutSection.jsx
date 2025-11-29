@@ -67,12 +67,9 @@ const AboutSection = () => {
                 control engineering and over 1 year of experience in <b>C# and .NET</b>.
               </p>
               <p>
-                In my current role, I develop <b>Windows services</b> that
-                automate and manage file processing between servers, applying{" "}
-                <b>SOLID principles</b>, clean code practices, and structured debugging to
-                ensure reliability and stability.
+                I build and maintain .NET backends and React frontends with a focus on reliability, clean architecture and testing. I’m currently working with C#, Windows services and file-processing automation, while growing my full-stack skills through .NET and JavaScript projects.
               </p>
-              <p>
+              {/* <p>
                 Outside of work, I actively deepen my full-stack skills through personal
                 projects and technical challenges, including building{" "}
                 <b>.NET applications with unit tests</b>, applying <b>SOLID</b>, and
@@ -82,7 +79,7 @@ const AboutSection = () => {
                 I enjoy working in <b>Agile environments</b>, collaborating through{" "}
                 <b>Git, GitLab, Azure DevOps</b>, and contributing to the improvement of
                 existing systems.
-              </p>
+              </p> */}
             </div>
 
                         {/* Location & availability */}
@@ -92,19 +89,16 @@ const AboutSection = () => {
               </h3>
 
               <p className="text-gray-200 text-sm lg:text-base">
-                I am actively looking for full-stack developer roles outside the Montréal Metropolitan Community (CMM).
+                I’m actively looking for full-stack developer roles <b>outside the Montréal Metropolitan Community (CMM)</b>, in regional Québec.
               </p>
               <p className="mt-3 text-gray-200 text-sm lg:text-base">
-                I am targeting regional cities including:  
-                <b> Québec City, Lévis, Drummondville, Trois-Rivières, Sherbrooke, Granby, Saint-Hyacinthe, and surrounding areas.</b>
+                I’m currently based in Québec City, but I’m open to roles outside the Montréal Metropolitan Community (CMM), in regional Québec.
               </p>
               <p className="mt-3 text-gray-200 text-sm lg:text-base">
-                I am open to hybrid or on-site roles, where I can commute to the office from a city outside the CMM.
+                Target regions include: Québec City, Lévis, Drummondville, Trois-Rivières, Sherbrooke, Granby, Saint-Hyacinthe and nearby areas.
               </p>
-
-              <p className="mt-2 text-gray-200 text-sm lg:text-base">
-                This relocation objective is long-term and aligned with my family’s work locations.
-I am committed to building my career in regional Québec.  
+              <p className="mt-3 text-gray-200 text-sm lg:text-base">
+                I’m open to <b>hybrid, on-site or remote </b> roles where I can commute from a city outside the CMM. This relocation plan is long-term and aligned with my family’s work locations.
               </p>
             </div>
 

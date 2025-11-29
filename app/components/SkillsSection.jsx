@@ -45,12 +45,12 @@ const skillsData = [
         iconComponent: <CsharpIcon className ={`${iconStyles}`}/>,
         type: "core",
     },
-    {
-        id:2,
-        name: ".NET",
-        iconComponent: <DotNetIcon className ={`${iconStyles}`}/>,
-        type: "core",
-    },
+    // {
+    //     id:2,
+    //     name: ".NET",
+    //     iconComponent: <DotNetIcon className ={`${iconStyles}`}/>,
+    //     type: "core",
+    // },
     {
         id:3,
         name: "core",
@@ -219,12 +219,12 @@ const skillsData = [
     },
     
 
-    {
-        id:19,
-        name: "PL/SQL",
-        iconComponent: <SqlIcon className ={`${iconStyles}`}/>,
-        type: "secondary",
-    },
+        // {
+        //     id:19,
+        //     name: "PL/SQL",
+        //     iconComponent: <SqlIcon className ={`${iconStyles}`}/>,
+        //     type: "secondary",
+        // },
 
     {
         id:21,
