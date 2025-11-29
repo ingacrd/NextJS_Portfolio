@@ -63,10 +63,6 @@ const AboutSection = () => {
             {/* Bio */}
             <div className="space-y-4 text-base lg:text-lg text-gray-200">
               <p>
-                I am a <b>Full-Stack .NET &amp; React</b> developer with a background in
-                control engineering and over 1 year of experience in <b>C# and .NET</b>.
-              </p>
-              <p>
                 I build and maintain .NET backends and React frontends with a focus on reliability, clean architecture and testing. I’m currently working with C#, Windows services and file-processing automation, while growing my full-stack skills through .NET and JavaScript projects.
               </p>
               {/* <p>
@@ -87,10 +83,6 @@ const AboutSection = () => {
               <h3 className="text-lg font-semibold text-white mb-3">
                 Location &amp; availability
               </h3>
-
-              <p className="text-gray-200 text-sm lg:text-base">
-                I’m actively looking for full-stack developer roles <b>outside the Montréal Metropolitan Community (CMM)</b>, in regional Québec.
-              </p>
               <p className="mt-3 text-gray-200 text-sm lg:text-base">
                 I’m currently based in Québec City, but I’m open to roles outside the Montréal Metropolitan Community (CMM), in regional Québec.
               </p>
