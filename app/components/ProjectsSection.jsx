@@ -29,7 +29,7 @@ const featuredProjects = [
     id: "property-rental",
     title: "Property Rental Management — ASP.NET Core MVC + SQL Server",
     description:
-      "Multi-role property management platform for tenants and owners with scheduling, messaging simulation, and property administration.",
+      "Multi-role property management platform for tenants, owners and managers, with scheduling, chat, and property administration.",
     stack:
       "ASP.NET Core MVC · C# · Entity Framework Core · SQL Server · Bootstrap · JavaScript · Azure",
     bullets: [
@@ -48,11 +48,11 @@ const featuredProjects = [
     title: "Full-Stack AI Prompting Tool — Next.js + MongoDB",
     description:
       "Full-stack app to create, organize and share AI prompts with tags, likes, and user profiles.",
-    stack: "Next.js 14 · TypeScript · Tailwind · MongoDB · Server Actions",
+    stack: "Next.js  · Tailwind · MongoDB",
     bullets: [
-      "Implemented full CRUD for prompts, tags, likes and user profiles.",
+      "Implemented full CRUD for prompts with  tags, likes and user profiles.",
       "Built all pages, forms and layouts in Next.js with responsive Tailwind UI.",
-      "Integrated MongoDB + server actions for fast, server-side data access.",
+      "Integrated MongoDB with Next.js server-side logic for persistent data storage.",
     ],
     liveDemoUrl: "https://next-js-ai-prompting-tool.vercel.app/",
     frontendRepoUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
@@ -60,18 +60,19 @@ const featuredProjects = [
 
   },
   {
-    id: "portfolio",
-    title: "Next.js Web Portfolio — Next.js + Tailwind + Framer Motion",
+    id: "react-notes",
+    title: "React Notes App — React + TypeScript",
     description:
-      "Personal portfolio showcasing my full-stack projects, experience, and skills as a .NET & React developer.",
-    stack: "Next.js · TypeScript · Tailwind · Framer Motion",
+      "Full-featured note-taking application built with React and TypeScript, supporting markdown editing, categories, content search, and dynamic filtering. Based on a tutorial starter, but significantly extended with new features, improved UX, and cleaner component structure.",
+    stack: "React · TypeScript · React Router · Bootstrap · Local Storage Persistence",
     bullets: [
-      "Designed the overall UI system and layout from scratch.",
-      "Built reusable components and sections in Next.js with responsive Tailwind design.",
-      "Added subtle Framer Motion animations for hero, skills and projects sections.",
+      "Implemented complete CRUD for notes with markdown editing and category tagging.",
+      "Added content search, category filtering, creation date property, and date-range filtering.",
+      "Enhanced the routing structure and optimized component organization for scalability.",
+      "Persisted notes using local storage for a lightweight client-side experience.",
     ],
-    liveDemoUrl: "https://andrearuiz.vercel.app",
-    frontendRepoUrl: "https://github.com/ingacrd/NextJS_Portfolio",
+    liveDemoUrl: "https://notesapplication-react.netlify.app/",
+    frontendRepoUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
     backendRepoUrl: null,
 
   },
@@ -79,15 +80,15 @@ const featuredProjects = [
 
 const otherProjects = [
   {
-    id: "react-notes",
-    title: "React Notes App",
+    id: "react-movie-searcher",
+    title: "React Movie Searcher",
     description:
-      "Advanced note-taking app with markdown, categories, filters, routing and full CRUD.",
-    image: "/images/projects/ReactNotesApp.gif",
+      "Movie search app using the OMDB API with dynamic cards and custom sorting.",
+    image: "images/projects/ReactMovieSearcher.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
-    previewUrl: "https://notesapplication-react.netlify.app/",
-    technologies: ["React", "TypeScript", "Vite"],
+    gitUrl: "https://github.com/ingacrd/ReactMovieSearcher",
+    previewUrl: "https://reactmoviesearcher.netlify.app/",
+    technologies: ["React"],
   },
   {
     id: "android-couple-game",
@@ -166,28 +167,6 @@ const otherProjects = [
     technologies: ["JavaScript"],
   },
   {
-    id: "mirror-fashion",
-    title: "Ecommerce Mirror Fashion",
-    description:
-      "Ecommerce front-end using HTML and CSS animations to showcase products.",
-    image: "images/projects/Mirror_fashion.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "https://harmonious-starburst-036a9a.netlify.app/",
-    technologies: ["HTML", "CSS Animations"],
-  },
-  {
-    id: "react-movie-searcher",
-    title: "React Movie Searcher",
-    description:
-      "Movie search app using the OMDB API with dynamic cards and custom sorting.",
-    image: "images/projects/ReactMovieSearcher.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/ingacrd/ReactMovieSearcher",
-    previewUrl: "https://reactmoviesearcher.netlify.app/",
-    technologies: ["React"],
-  },
-  {
     id: "js-bootstrap-portfolio",
     title: "JavaScript Bootstrap Portfolio",
     description:
@@ -208,6 +187,17 @@ const otherProjects = [
     gitUrl: "https://github.com/ingacrd/PortfolioJavascriptBootstrap",
     previewUrl: "https://aru-portfolio.netlify.app/",
     technologies: ["Bootstrap", "SASS"],
+  },
+    {
+    id: "mirror-fashion",
+    title: "Ecommerce Mirror Fashion",
+    description:
+      "Ecommerce front-end using HTML and CSS animations to showcase products.",
+    image: "images/projects/Mirror_fashion.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://harmonious-starburst-036a9a.netlify.app/",
+    technologies: ["HTML", "CSS Animations"],
   },
 ];
 

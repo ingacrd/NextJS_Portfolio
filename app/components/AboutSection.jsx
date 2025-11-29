@@ -67,7 +67,7 @@ const AboutSection = () => {
                 control engineering and over 1 year of experience in <b>C# and .NET</b>.
               </p>
               <p>
-                In my current role, I develop and maintain <b>Windows services</b> that
+                In my current role, I develop <b>Windows services</b> that
                 automate and manage file processing between servers, applying{" "}
                 <b>SOLID principles</b>, clean code practices, and structured debugging to
                 ensure reliability and stability.
@@ -83,11 +83,31 @@ const AboutSection = () => {
                 <b>Git, GitLab, Azure DevOps</b>, and contributing to the improvement of
                 existing systems.
               </p>
-              <p>
-                Based in Québec, I&apos;m comfortable working in <b>English and French</b>,
-                and open to hybrid or remote roles across Québec and Canada.
+            </div>
+
+                        {/* Location & availability */}
+            <div className="mt-6 rounded-2xl bg-white/5 border border-white/10 p-5">
+              <h3 className="text-lg font-semibold text-white mb-3">
+                Location &amp; availability
+              </h3>
+
+              <p className="text-gray-200 text-sm lg:text-base">
+                I am actively looking for full-stack developer roles outside the Montréal Metropolitan Community (CMM).
+              </p>
+              <p className="mt-3 text-gray-200 text-sm lg:text-base">
+                I am targeting regional cities including:  
+                <b> Québec City, Lévis, Drummondville, Trois-Rivières, Sherbrooke, Granby, Saint-Hyacinthe, and surrounding areas.</b>
+              </p>
+              <p className="mt-3 text-gray-200 text-sm lg:text-base">
+                I am open to hybrid or on-site roles, where I can commute to the office from a city outside the CMM.
+              </p>
+
+              <p className="mt-2 text-gray-200 text-sm lg:text-base">
+                This relocation objective is long-term and aligned with my family’s work locations.
+I am committed to building my career in regional Québec.  
               </p>
             </div>
+
 
             {/* Tabs + content attachés à la colonne texte */}
             <div className="mt-8">
