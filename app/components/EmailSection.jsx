@@ -46,11 +46,16 @@ const EmailSection = () => {
             <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
             <p className="text-[#ADB7BE] mb-4 max-w-md">
                 {" "}
-                I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
-
+                I&apos;m currently looking for full-stack developer roles (.NET / React) in regional Québec (outside the Montréal CMM) and remote roles across Canada. If my profile fits what you&apos;re looking for, I&apos;d be happy to talk.
             </p>
             <div className="socials flex flex-row gap-2">
-                
+                <Link className="text text-gray-600 fill-pink-600" href="mailto:ingacrd@gmail.com">
+                    <Image src="/email-icon.svg"
+                            alt = "Email Icon"
+                            width={50}
+                            height={50}
+                            />
+                </Link>
                 <Link href="https://github.com/ingacrd">
                     <Image src="/github-icon.svg"
                             alt = "Github Icon"
@@ -64,6 +69,7 @@ const EmailSection = () => {
                             height={50}
                             />
                 </Link>
+
             </div>
         </div>
         <form className="flex flex-col" onSubmit={handleSubmit}>

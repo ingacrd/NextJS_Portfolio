@@ -277,7 +277,7 @@ const SkillsSection = () => {
           primary focus of my next role.
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-x-3 gap-y-5 px-1 sm:px-2">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-x-3 gap-y-5 px-1 sm:px-2">
           {skillsData
             .filter((skill) => skill.type === "secondary")
             .map((skill) => (
