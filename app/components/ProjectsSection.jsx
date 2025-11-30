@@ -33,37 +33,38 @@ const featuredProjects = [
     stack:
       "ASP.NET Core MVC · C# · Entity Framework Core · SQL Server · Bootstrap · JavaScript · Azure",
     bullets: [
-      "Implemented MVC controllers, services, and EF Core migrations for properties, rentals, and events.",
-      "Built role-based UI flows for tenants and owners using Bootstrap and JavaScript.",
-      "Deployed the application to Azure App Service and configured the production database.",
+      "Designed the data model and implemented CRUD features for properties, users and rental operations.",
+      "Built authentication/authorization with role-based access and secure account workflows.",
+      "Integrated scheduling, messaging and property-administration features using MVC architecture.",
+      "Deployed the application on Azure with SQL Server database and managed environment configuration."
     ],
     liveDemoUrl: "https://www.youtube.com/watch?v=Rdf-fGiqSDw",
-    frontendRepoUrl:
-      "https://github.com/ingacrd/Property-Rental-Management-ASP.Net-Core-MVC",
-    backendRepoUrl: null, 
+    frontendRepoUrl: null,
+    backendRepoUrl: "https://github.com/ingacrd/Property-Rental-Management-ASP.Net-Core-MVC", 
 
   },
   {
     id: "ai-prompting-tool",
     title: "Full-Stack AI Prompting Tool — Next.js + MongoDB",
     description:
-      "Full-stack app to create, organize and share AI prompts with tags, likes, and user profiles.",
-    stack: "Next.js  · Tailwind · MongoDB",
+      "Full-stack web app to create, organize and share AI prompts with tags, user profiles, and Google authentication.",
+    stack: "Next.js  · Tailwind · MongoDB · NextAuth (Google Login)",
     bullets: [
-      "Implemented full CRUD for prompts with  tags, likes and user profiles.",
+      "Implemented full CRUD for prompts with tags, likes and user profiles.",
+      "Implemented Google authentication (NextAuth) and user profiles with secure session handling.",
       "Built all pages, forms and layouts in Next.js with responsive Tailwind UI.",
       "Integrated MongoDB with Next.js server-side logic for persistent data storage.",
     ],
     liveDemoUrl: "https://next-js-ai-prompting-tool.vercel.app/",
-    frontendRepoUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
-    backendRepoUrl: null,
+    frontendRepoUrl: null,
+    backendRepoUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
 
   },
   {
     id: "react-notes",
     title: "React Notes App — React + TypeScript",
     description:
-      "Full-featured note-taking application built with React and TypeScript, supporting markdown editing, categories, content search, and dynamic filtering. Based on a tutorial starter, but significantly extended with new features, improved UX, and cleaner component structure.",
+      "A fully-featured note-taking app built with React and TypeScript, supporting markdown editing, tagging, search, and dynamic filtering. Expanded significantly beyond the original starter with new features, improved UX, and a clean, scalable component structure.",
     stack: "React · TypeScript · React Router · Bootstrap · Local Storage Persistence",
     bullets: [
       "Implemented complete CRUD for notes with markdown editing and category tagging.",
@@ -72,8 +73,8 @@ const featuredProjects = [
       "Persisted notes using local storage for a lightweight client-side experience.",
     ],
     liveDemoUrl: "https://notesapplication-react.netlify.app/",
-    frontendRepoUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
-    backendRepoUrl: null,
+    frontendRepoUrl: null,
+    backendRepoUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
 
   },
 ];
@@ -225,7 +226,7 @@ return (
     {/* Top: Experience + Featured Projects */}
     <div className="max-w-6xl mx-auto px-4">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
-        Experience & Featured Projects
+        Featured Projects
       </h2>
 
       <p className="text-center text-gray-300 max-w-3xl mx-auto mb-10">
