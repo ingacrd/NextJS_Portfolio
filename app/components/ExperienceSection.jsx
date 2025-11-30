@@ -9,18 +9,18 @@ const experiences = [
     period: "2024–2025",
     location: "Montréal, QC",
     bullets: [
-      "Developed, tested and maintained internal services and libraries using C# and .NET., colaborating in Gitlab",
+      "Developed, tested and support internal services and libraries using C# and .NET, collaborating via GitLab",
       "Applied SOLID principles and clean coding practices to improve reliability and maintainability.",
-      "Worked on migration of existing processes, debugging and improving legacy code.",
+      "Worked on migration of existing processes.",
     ],
   },
   {
     title: "Full-Stack .NET C# Developer (Volunteer)",
     company: "Custom County",
     period: "2024",
-    location: "Canada (remote)",
+    location: "Montréal, QC (remote)",
     bullets: [
-      "Contributed to an N-tier application built with Blazor and SQL Server.",
+      "Contributed to an N-tier .NET application built using Blazor and SQL Server.",
       "Implemented features following Unit of Work design pattern and SOLID principles.",
       "Collaborated in an Agile team using Azure DevOps, Git and code reviews.",
     ],
@@ -32,7 +32,7 @@ const ExperienceSection = () => {
     <section id="experience" className="text-white mb-16">
       <div className="max-w-6xl mx-auto py-8 px-4 xl:px-0">
         <h2 className="text-3xl md:text-4xl font-bold mb-2">
-          Professional Experience
+          Professional Related Experience
         </h2>
         <p className="text-primary-300 mb-6">
           Real-world experience working with .NET, C#, Agile teams and modern tooling.

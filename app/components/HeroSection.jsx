@@ -52,13 +52,9 @@ const HeroSection = () => {
                         repeat={Infinity}
                       /> 
                   </h1>
-                <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                  Full-Stack .NET & React Developer · 1+ year of experience ·📍Québec, Canada
-                  <p className="">
-                  Open to regional Québec roles (outside the Montréal CMM) – hybrid or on-site      
-                  </p>
+                <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl">
+                  Full-Stack .NET & React Developer · 1+ year of experience ·📍Open to regional Québec roles
                 </p>
-                
 
                 <p className="text-[#ADB7BE] mb-6">
                   Focused on C#, ASP.NET Core, SQL Server, React, TypeScript, Azure & automated testing.
@@ -69,8 +65,8 @@ const HeroSection = () => {
                     Languages
                   </p>
                   <p>
-                    <b className="text-secondary-300">English:</b> <span className="font-medium">Full professional proficiency</span> ·{" "}
-                    <b className="text-secondary-300">French:</b> <span className="font-medium">Professional / functional</span>
+                    <b className="text-secondary-300">English:</b> <span className="font-light">Full professional proficiency</span> ·{" "}
+                    <b className="text-secondary-300">French:</b> <span className="font-light">Professional / functional</span>
                   </p>
                 </div>
 

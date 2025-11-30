@@ -84,13 +84,10 @@ const AboutSection = () => {
                 Location &amp; availability
               </h3>
               <p className="mt-3 text-gray-200 text-sm lg:text-base">
-                I’m currently based in Québec City, but I’m open to roles outside the Montréal Metropolitan Community (CMM), in regional Québec.
+                I’m open to <b>hybrid, on-site or remote </b> roles outside the Montréal Metropolitan Community (CMM), in regional Québec. Target regions include: <b>Québec City, Lévis, Drummondville, Trois-Rivières, Sherbrooke, Granby, Saint-Hyacinthe and nearby areas.</b>
               </p>
               <p className="mt-3 text-gray-200 text-sm lg:text-base">
-                Target regions include: Québec City, Lévis, Drummondville, Trois-Rivières, Sherbrooke, Granby, Saint-Hyacinthe and nearby areas.
-              </p>
-              <p className="mt-3 text-gray-200 text-sm lg:text-base">
-                I’m open to <b>hybrid, on-site or remote </b> roles where I can commute from a city outside the CMM. This relocation plan is long-term and aligned with my family’s work locations.
+                This relocation plan is long-term and aligned with my family’s work locations.
               </p>
             </div>
 
