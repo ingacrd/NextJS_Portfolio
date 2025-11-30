@@ -1,10 +1,9 @@
-
 "use client";
 
-import React, { useState, useRef } from 'react'
-import ProjectCard from './ProjectCard'
-import ProjectTag from './ProjectTag'
-import { motion, useInView } from 'framer-motion';
+import React, { useState, useRef } from "react";
+import ProjectCard from "./ProjectCard";
+import ProjectTag from "./ProjectTag";
+import { motion, useInView } from "framer-motion";
 
 const featuredProjects = [
   {
@@ -23,7 +22,6 @@ const featuredProjects = [
     liveDemoUrl: "https://bidcalculatorvue.netlify.app/",
     frontendRepoUrl: "https://github.com/ingacrd/Vue-Bid-Calculator-Frontend",
     backendRepoUrl: "https://github.com/ingacrd/Donet-TDD-Bid-Calculator",
-  
   },
   {
     id: "property-rental",
@@ -36,12 +34,12 @@ const featuredProjects = [
       "Designed the data model and implemented CRUD features for properties, users and rental operations.",
       "Built authentication/authorization with role-based access and secure account workflows.",
       "Integrated scheduling, messaging and property-administration features using MVC architecture.",
-      "Deployed the application on Azure with SQL Server database and managed environment configuration."
+      "Deployed the application on Azure with SQL Server database and managed environment configuration.",
     ],
     liveDemoUrl: "https://www.youtube.com/watch?v=Rdf-fGiqSDw",
     frontendRepoUrl: null,
-    backendRepoUrl: "https://github.com/ingacrd/Property-Rental-Management-ASP.Net-Core-MVC", 
-
+    backendRepoUrl:
+      "https://github.com/ingacrd/Property-Rental-Management-ASP.Net-Core-MVC",
   },
   {
     id: "ai-prompting-tool",
@@ -58,7 +56,6 @@ const featuredProjects = [
     liveDemoUrl: "https://next-js-ai-prompting-tool.vercel.app/",
     frontendRepoUrl: null,
     backendRepoUrl: "https://github.com/ingacrd/NextJS_AI_PromptingTool",
-
   },
   {
     id: "react-notes",
@@ -75,7 +72,6 @@ const featuredProjects = [
     liveDemoUrl: "https://notesapplication-react.netlify.app/",
     frontendRepoUrl: null,
     backendRepoUrl: "https://github.com/ingacrd/React_TypeScript_NotesApp",
-
   },
 ];
 
@@ -189,7 +185,7 @@ const otherProjects = [
     previewUrl: "https://aru-portfolio.netlify.app/",
     technologies: ["Bootstrap", "SASS"],
   },
-    {
+  {
     id: "mirror-fashion",
     title: "Ecommerce Mirror Fashion",
     description:
@@ -202,198 +198,208 @@ const otherProjects = [
   },
 ];
 
-
 const ProjectsSection = () => {
+  const [tag, setTag] = useState("All");
+  const [showAllOther, setShowAllOther] = useState(false);
 
-    const [tag, setTag] = useState("All");
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
-    const handleTagChange = (newTag) => {
-        setTag(newTag);
-    };
+  const handleTagChange = (newTag) => {
+    setTag(newTag);
+    // When changing tag, reset to collapsed view so it never overwhelms
+    setShowAllOther(false);
+  };
 
-    const filteredOtherProjects = otherProjects.filter((project) =>
-  project.tag.includes(tag)
-);
+  const filteredOtherProjects = otherProjects.filter((project) =>
+    project.tag.includes(tag)
+  );
 
-    const cardVariants = {
-        initial: { y: 50, opacity: 0 },
-        animate: { y: 0, opacity: 1 },
-    };
-return (
-  <section id="projects" className="mt-16">
-    {/* Top: Experience + Featured Projects */}
-    <div className="max-w-6xl mx-auto px-4">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
-        Featured Projects
-      </h2>
+  const VISIBLE_OTHER_COUNT = 6;
+  const visibleOtherProjects = showAllOther
+    ? filteredOtherProjects
+    : filteredOtherProjects.slice(0, VISIBLE_OTHER_COUNT);
 
-      <p className="text-center text-gray-300 max-w-3xl mx-auto mb-10">
-        I build full-stack solutions with .NET, JavaScript and modern web
-        frameworks, focusing on clean architecture, testing and maintainable
-        code. Here are a few projects that best represent how I work
-        end-to-end.
-      </p>
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
 
-      <div
-        ref={ref}
-        className="grid md:grid-cols-2 gap-8 md:gap-10 mt-6"
-      >
-        {featuredProjects.map((project, index) => (
-          <motion.div
-            key={project.id}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.4, delay: index * 0.2 }}
-            className="rounded-2xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] p-6 flex flex-col justify-between
+  return (
+    <section id="projects" className="mt-16">
+      {/* Top: Experience + Featured Projects */}
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
+          Featured Projects
+        </h2>
+
+        <p className="text-center text-gray-300 max-w-3xl mx-auto mb-10">
+          I build full-stack solutions with .NET, JavaScript and modern web
+          frameworks, focusing on clean architecture, testing and maintainable
+          code. Here are a few projects that best represent how I work
+          end-to-end.
+        </p>
+
+        <div ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-10 mt-6">
+          {featuredProjects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.4, delay: index * 0.2 }}
+              className="rounded-2xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] p-6 flex flex-col justify-between
            hover:border-primary-500/60 hover:-translate-y-1 hover:shadow-xl/30 transition-transform transition-colors duration-200"
-          >
-            <div>
-              <span className="inline-flex items-center rounded-full bg-primary-500/10 text-primary-300 text-xs font-semibold px-3 py-1 mb-3">
-                Featured Project
-              </span>
+            >
+              <div>
+                <span className="inline-flex items-center rounded-full bg-primary-500/10 text-primary-300 text-xs font-semibold px-3 py-1 mb-3">
+                  Featured Project
+                </span>
 
-              <h3 className="text-xl font-semibold text-white mb-2">
-                {project.title}
-              </h3>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  {project.title}
+                </h3>
 
-            <p className="text-sm text-gray-300 mb-3 line-clamp-3">
-            {project.description}
-            </p>
+                <p className="text-sm text-gray-300 mb-3 line-clamp-3">
+                  {project.description}
+                </p>
 
-             <div className="flex flex-wrap gap-2 mb-3">
-                {project.stack.split("·").map((tech) => (
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {project.stack.split("·").map((tech) => (
                     <span
-                    key={tech.trim()}
-                    className="text-[11px] md:text-xs px-2 py-1 rounded-full bg-white/5 text-primary-100 border border-white/10"
+                      key={tech.trim()}
+                      className="text-[11px] md:text-xs px-2 py-1 rounded-full bg-white/5 text-primary-100 border border-white/10"
                     >
-                    {tech.trim()}
+                      {tech.trim()}
                     </span>
-                ))}
-            </div>
+                  ))}
+                </div>
 
-              <ul className="space-y-2 text-sm text-gray-300">
-                {project.bullets.map((bullet, i) => (
-                  <li key={i} className="flex gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary-400 shrink-0" />
-                    <span>{bullet}</span>
-                  </li>
-                ))}
-              </ul>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  {project.bullets.map((bullet, i) => (
+                    <li key={i} className="flex gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary-400 shrink-0" />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
+              <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2 sm:gap-3 items-center">
+                {/* Live demo = primary */}
+                {project.liveDemoUrl && (
+                  <a
+                    href={project.liveDemoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs sm:text-sm font-semibold px-4 py-2 rounded-full bg-primary-500 text-white shadow-md shadow-primary-500/40 hover:bg-primary-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
+                  >
+                    Live demo
+                  </a>
+                )}
+
+                {/* Repos = secondary pills */}
+                {project.frontendRepoUrl && (
+                  <a
+                    href={project.frontendRepoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs sm:text-sm font-medium px-4 py-2 rounded-full bg-white/5 text-gray-100 border border-white/15 hover:bg-white/10 hover:border-primary-400/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
+                  >
+                    Frontend repo
+                  </a>
+                )}
+                {project.backendRepoUrl && (
+                  <a
+                    href={project.backendRepoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs sm:text-sm font-medium px-4 py-2 rounded-full bg-white/5 text-gray-100 border border-white/15 hover:bg-white/10 hover:border-primary-400/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
+                  >
+                    Backend repo
+                  </a>
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* Divider */}
+      <div className="max-w-6xl mx-auto px-4 mt-16 mb-8">
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      </div>
+
+      {/* Other Projects (compact grid) */}
+      <div className="max-w-6xl mx-auto px-4">
+        <h3 className="text-2xl font-semibold text-white text-center mb-3">
+          Other Projects
+        </h3>
+        <p className="text-center text-gray-300 text-sm mb-6 max-w-2xl mx-auto">
+          Smaller projects, tutorials and experiments that show my curiosity and
+          range across web, mobile and APIs. These are bonus projects on top of
+          my main .NET + React focus.
+        </p>
+
+        <div className="text-white flex flex-row justify-center items-center gap-2 py-4">
+          <ProjectTag
+            onClick={handleTagChange}
+            name="All"
+            isSelected={tag === "All"}
+          />
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Web"
+            isSelected={tag === "Web"}
+          />
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Mobile"
+            isSelected={tag === "Mobile"}
+          />
         </div>
 
-            <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2 sm:gap-3 items-center">
-  {/* Live demo = primary */}
-  {project.liveDemoUrl && (
-    <a
-      href={project.liveDemoUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs sm:text-sm font-semibold px-4 py-2 rounded-full bg-primary-500 text-white shadow-md shadow-primary-500/40 hover:bg-primary-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
-    >
-      Live demo
-    </a>
-  )}
+        <ul className="grid md:grid-cols-3 gap-6 md:gap-8">
+          {visibleOtherProjects.map((project, index) => (
+            <motion.li
+              key={project.id}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
+            >
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                imgUrl={project.image}
+                tags={project.tag}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+                technologies={project.technologies}
+                compact
+              />
+            </motion.li>
+          ))}
+        </ul>
 
-  {/* Repos = secondary pills */}
-  {project.frontendRepoUrl && (
-    <a
-      href={project.frontendRepoUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs sm:text-sm font-medium px-4 py-2 rounded-full bg-white/5 text-gray-100 border border-white/15 hover:bg-white/10 hover:border-primary-400/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
-    >
-      Frontend repo
-    </a>
-  )}
-  {project.backendRepoUrl && (
-    <a
-      href={project.backendRepoUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs sm:text-sm font-medium px-4 py-2 rounded-full bg-white/5 text-gray-100 border border-white/15 hover:bg-white/10 hover:border-primary-400/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
-    >
-      Backend repo
-    </a>
-  )}
-
-  {/* Read more = ghost */}
-  {/* {project.readMoreUrl && (
-    <a
-      href={project.readMoreUrl}
-      className="text-xs sm:text-sm font-medium px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
-    >
-      Read more
-    </a>
-  )} */}
-</div>
-
-          </motion.div>
-        ))}
+        {filteredOtherProjects.length > VISIBLE_OTHER_COUNT && (
+          <div className="flex flex-col items-center mt-6">
+            <button
+              type="button"
+              onClick={() => setShowAllOther((prev) => !prev)}
+              className="text-xs sm:text-sm font-medium px-4 py-2 rounded-full bg-white/5 text-gray-100 border border-white/15 hover:bg-white/10 hover:border-primary-400/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 transition"
+            >
+              {showAllOther ? "Show fewer projects" : "Show more projects"}
+            </button>
+            <span className="mt-2 text-xs text-gray-400">
+              Showing {visibleOtherProjects.length} of{" "}
+              {filteredOtherProjects.length} projects
+            </span>
+          </div>
+        )}
       </div>
-    </div>
+    </section>
+  );
+};
 
-    {/* Divider */}
-    <div className="max-w-6xl mx-auto px-4 mt-16 mb-8">
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-    </div>
-
-    {/* Other Projects (compact grid) */}
-    <div className="max-w-6xl mx-auto px-4">
-      <h3 className="text-2xl font-semibold text-white text-center mb-4">
-        Other Projects
-      </h3>
-      <p className="text-center text-gray-300 text-sm mb-6">
-        Smaller projects, tutorials and experiments that show my curiosity and
-        range across web, mobile and APIs.
-      </p>
-
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-4">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
-      </div>
-
-      <ul className="grid md:grid-cols-3 gap-6 md:gap-8">
-        {filteredOtherProjects.map((project, index) => (
-          <motion.li
-            key={project.id}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-          >
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              tags={project.tag}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-              technologies={project.technologies}
-            />
-          </motion.li>
-        ))}
-      </ul>
-    </div>
-  </section>
-);
-
-}
-
-export default ProjectsSection
+export default ProjectsSection;
