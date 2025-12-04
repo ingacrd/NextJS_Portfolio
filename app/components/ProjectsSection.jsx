@@ -8,19 +8,19 @@ import { motion, useInView } from "framer-motion";
 const featuredProjects = [
   {
     id: "bid-calculator",
-    title: "Bid Calculator — Full-Stack .NET 8 API + Vue 3 Frontend (TDD)",
+    title: "Bid Calculator — Full-Stack .NET 8 API + React Frontend (TDD)",
     description:
-      "A clean full-stack project demonstrating TDD, domain design, and a modern Vue frontend. Calculates bid totals with dynamic fees using a .NET 8 API and reactive UI.",
+      "A clean full-stack project demonstrating TDD, domain design, and a modern React frontend. Calculates bid totals with dynamic fees using a .NET 8 API and reactive UI.",
     stack:
-      ".NET 8 · C# · ASP.NET Core Web API · xUnit · Vue 3 · TypeScript · TailwindCSS · Azure · Netlify",
+      ".NET 8 · C# · ASP.NET Core Web API · React · TypeScript · TailwindCSS · xUnit · Vitest · React Testing Library · Azure · Netlify",
     bullets: [
       "Backend built with SOLID principles and TDD (xUnit + FluentAssertions).",
       "Fee engine with clean domain architecture.",
-      "Vue 3 + TypeScript frontend with live debounced updates.",
-      " Deployed to Azure (API) & Netlify (Frontend).",
+      "React + TypeScript frontend with live debounced updates and unit tests (Vitest + React Testing Library)",
+      "Deployed to Azure (API) & Netlify (Frontend).",
     ],
-    liveDemoUrl: "https://bidcalculatorvue.netlify.app/",
-    frontendRepoUrl: "https://github.com/ingacrd/Vue-Bid-Calculator-Frontend",
+    liveDemoUrl: "https://bidreactcalc.netlify.app/",
+    frontendRepoUrl: "https://github.com/ingacrd/React-Bid-Calculator-Frontend",
     backendRepoUrl: "https://github.com/ingacrd/Donet-TDD-Bid-Calculator",
   },
   {
