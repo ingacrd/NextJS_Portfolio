@@ -35,8 +35,9 @@ const featuredProjects = [
       "Built authentication/authorization with role-based access and secure account workflows.",
       "Integrated scheduling, messaging and property-administration features using MVC architecture.",
       "Deployed the application on Azure with SQL Server database and managed environment configuration.",
+      "Demo user: owner1, password: Owner123! "
     ],
-    liveDemoUrl: "https://www.youtube.com/watch?v=Rdf-fGiqSDw",
+    liveDemoUrl: "https://property-rentals-ingaru-f6gghbhgg8dkgbaf.canadacentral-01.azurewebsites.net/",
     frontendRepoUrl: null,
     backendRepoUrl:
       "https://github.com/ingacrd/Property-Rental-Management-ASP.Net-Core-MVC",
